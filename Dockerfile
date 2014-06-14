@@ -14,4 +14,4 @@ RUN	mozroots --import --sync
 ENV   HOME  /root
 RUN   /bin/bash -c "curl https://raw.githubusercontent.com/graemechristie/Home/KvmShellImplementation/kvmsetup.sh | sh && source ~/.kre/kvm/kvm.sh && kvm upgrade"
 RUN	git clone https://github.com/davidfowl/HelloWorldVNext ~/helloworld
-RUN	/bin/bash -c "source ~/.kre/kvm/kvm.sh && cd ~/helloworld/ && kpm restore”
+RUN	/bin/bash -c "source ~/.kre/kvm/kvm.sh && cd ~/helloworld/ && kpm restore"
