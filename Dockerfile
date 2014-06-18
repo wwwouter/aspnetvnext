@@ -2,6 +2,7 @@ FROM    ubuntu:14.04
 
 MAINTAINER Wouter Mooij
 
+
 RUN	apt-get -y update
 RUN	apt-get -y install curl unzip git-core build-essential autoconf libtool gettext libgdiplus libgtk2.0-0 xsltproc
 RUN 	cd /tmp; git clone git://github.com/mono/mono.git
